@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserText: UIViewController {
+class UserText: MakesModelViewController {
 
     var counter = 2
     var timer = NSTimer()

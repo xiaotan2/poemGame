@@ -61,7 +61,7 @@
         <!--rhymeWord-->
         <scene sceneID="fxa-Yd-BkY">
             <objects>
-                <viewController title="rhymeWord" id="C1b-YY-r0M" sceneMemberID="viewController">
+                <viewController title="rhymeWord" id="C1b-YY-r0M" customClass="MakesModelViewController" customModule="poemGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2eg-eu-aCY"/>
                         <viewControllerLayoutGuide type="bottom" id="NhP-UF-f4A"/>
@@ -110,7 +110,7 @@
         <!--tapWhenReady-->
         <scene sceneID="uvA-iw-uBL">
             <objects>
-                <viewController title="tapWhenReady" id="GiL-Gg-Q5h" sceneMemberID="viewController">
+                <viewController title="tapWhenReady" id="GiL-Gg-Q5h" customClass="MakesModelViewController" customModule="poemGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uof-gJ-xo5"/>
                         <viewControllerLayoutGuide type="bottom" id="PQD-we-kLq"/>
@@ -171,7 +171,7 @@
         <!--TimeUp-->
         <scene sceneID="4qz-UT-umO">
             <objects>
-                <viewController storyboardIdentifier="TimeUp" title="TimeUp" id="p2p-dx-aRQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeUp" title="TimeUp" id="p2p-dx-aRQ" customClass="MakesModelViewController" customModule="poemGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bs-tQ-BFZ"/>
                         <viewControllerLayoutGuide type="bottom" id="CoP-sq-gsC"/>
@@ -206,7 +206,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Go!"/>
                                         <connections>
-                                            <segue destination="GiL-Gg-Q5h" kind="show" id="LIA-w9-NuY"/>
+                                            <segue destination="GiL-Gg-Q5h" kind="show" identifier="timesUpSegue" id="LIA-w9-NuY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -225,6 +225,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HtF-sZ-0Qq"/>
+        <segue reference="LIA-w9-NuY"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var promptWords = [String]()
     var poems = [[String]]()
     var playerSubmissions = [String]()
+    var m = Modeltwo(names: ["hello"])
     
     @IBOutlet weak var playerNum: UITextField!
     override func viewDidLoad() {
@@ -23,6 +24,13 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+            let svc = segue.destinationViewController as! MakesModelViewController
+            svc.m = m
+
     }
 
     @IBAction func setupButtonControl(sender: UIButton) {
@@ -126,8 +134,6 @@ class ViewController: UIViewController {
 //        row11.append("Who is this person you ")
 //        row11.append("Oh only the boy I've been crushing on since the second ")
 //        row11.append("He's walking my way, has my day come at ")
-        let m = Modeltwo(names: ["hello"])
-        m.printPoems()
 
     }
 
