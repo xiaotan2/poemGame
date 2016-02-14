@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     var promptWords = [String]()
     var poems = [[String]]()
-    var playerSubmissions: [String]
+    var playerSubmissions = [String]()
     
     @IBOutlet weak var playerNum: UITextField!
     override func viewDidLoad() {
