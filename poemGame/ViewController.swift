@@ -126,6 +126,8 @@ class ViewController: UIViewController {
 //        row11.append("Who is this person you ")
 //        row11.append("Oh only the boy I've been crushing on since the second ")
 //        row11.append("He's walking my way, has my day come at ")
+        var m = Model(names: ["hello"])
+        m.printPoems()
 
     }
 
