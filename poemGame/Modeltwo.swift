@@ -15,6 +15,7 @@ class Modeltwo {
     var pointer: Int //Points to the judge in the list
     var currPlayer: Int //Points to the current player in the list
     var poem: String
+    var randSequ: [Int]!
     
     
     init(names: [String]) {
@@ -23,8 +24,9 @@ class Modeltwo {
         poem = ""
         fileString = getPoemArray()
         fillwords = getFillWords()
-        printPoems()
+        //printPoems()
         makePlayers(names)
+        lineSequence()
     }
     
     //MARK: commands called from outside
@@ -38,7 +40,7 @@ class Modeltwo {
         else {
             currPlayer = 0
         }
-        //poem = getPoem()
+        updatePoem()
         return players[pointer].name
     }
     
@@ -54,8 +56,7 @@ class Modeltwo {
     }
     
     func getCurrLine() -> String{
-        //COMPLETE
-        return "Finish"
+        return poem.componentsSeparatedByString("\n")[randSequ[currPlayer]]
     }
     
     func getCurrPlayerName() -> String {
@@ -67,8 +68,14 @@ class Modeltwo {
     }
     
     func getFullPoem() -> String {
-        //COMPLETE
-        return "Finish"
+        let lis = poem.componentsSeparatedByString("\n")
+        var final = ""
+        var num = (currPlayer + 1) % players.count
+        for i in lis {
+            final += i + players[num].getWord() + "\n"
+            num = (num + 1) % players.count
+        }
+        return final
     }
     
     func endRound(word: String) {
@@ -129,13 +136,33 @@ class Modeltwo {
         return nil
     }
     
-    func getRandWord() {
-        
+    func getRandBlank()->String {
+        let place = Int(arc4random_uniform(UInt32(fillwords.count)))
+        return fillwords[place]
+    }
+    
+    func updatePoem() {
+        let place = Int(arc4random_uniform(UInt32(fileString.count)))
+        poem = fileString[place]
     }
     
     func printPoems() {
         for s in fileString {
             print(s)
         }
+    }
+    
+    func lineSequence(){
+        var arr = [Int]()
+        for x in 0..<players.count {
+            arr.append(x)
+        }
+        for _ in 0..<players.count {
+            let temp = arr[0]
+            let exchange = Int(arc4random_uniform(UInt32(players.count)))
+            arr[0] = arr[exchange]
+            arr[exchange] = temp
+        }
+        randSequ = arr;
     }
 }
