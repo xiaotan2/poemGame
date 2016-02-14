@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                 return false
             }
             var s = [String]()
-            for _ in 0..<Int(playerNum.text!) {
+            for _ in 0..<Int(playerNum.text!)! {
                 s.append("empty")
             }
             m = Modeltwo(names: s)

@@ -12,19 +12,18 @@ class Modeltwo {
     var fileString: [String]!
     var fillwords: [String]!
     var players: [Playertwo]!
-    var pointer: Int //Points to the judge in the list
+    //var pointer: Int //Points to the judge in the list
     var currPlayer: Int //Points to the current player in the list
     var poem: String
     var randSequ: [Int]!
     
     
     init(names: [String]) {
-        pointer = 0
-        currPlayer = 1
+        //pointer = 0
+        currPlayer = 0
         poem = ""
         fileString = getPoemArray()
         fillwords = getFillWords()
-        //printPoems()
         makePlayers(names)
         lineSequence()
     }
@@ -32,16 +31,17 @@ class Modeltwo {
     //MARK: commands called from outside
     
     //Returns the judge name
-    func startRound() -> String {
-        players[pointer].setJudge()
-        if pointer < players.count - 1 {
-            currPlayer = pointer + 1
-        }
-        else {
-            currPlayer = 0
-        }
+    func startRound() {//-> String {
+//        players[pointer].setJudge()
+//        if pointer < players.count - 1 {
+//            currPlayer = pointer + 1
+//        }
+//        else {
+//            currPlayer = 0
+//        }
         updatePoem()
-        return players[pointer].name
+        lineSequence()
+//        return players[pointer].name
     }
     
     //The current player is the next one in the rotation
@@ -56,16 +56,19 @@ class Modeltwo {
     }
     
     func getCurrLine() -> String{
+//        for x in randSequ {
+//            print(randSequ[x])
+//        }
         return poem.componentsSeparatedByString("\n")[randSequ[currPlayer]]
     }
     
-    func getCurrPlayerName() -> String {
-        return players[currPlayer].name
-    }
-    
-    func setCurrPlayerAns(ans: String) {
-        players[currPlayer].setWord(ans)
-    }
+//    func getCurrPlayerName() -> String {
+//        return players[currPlayer].name
+//    }
+//    
+//    func setCurrPlayerAns(ans: String) {
+//        players[currPlayer].setWord(ans)
+//    }
     
     func getFullPoem() -> String {
         let lis = poem.componentsSeparatedByString("\n")
@@ -79,13 +82,13 @@ class Modeltwo {
     }
     
     func endRound(word: String) {
-        players[pointer].endJudge()
-        if pointer + 1 == players.count {
-            pointer = 0
-        }
-        else {
-            pointer += 1
-        }
+//        players[pointer].endJudge()
+//        if pointer + 1 == players.count {
+//            pointer = 0
+//        }
+//        else {
+//            pointer += 1
+//        }
         
         for p in players {
             if p.getWord() == word {
@@ -157,10 +160,10 @@ class Modeltwo {
         for x in 0..<players.count {
             arr.append(x)
         }
-        for _ in 0..<players.count {
-            let temp = arr[0]
-            let exchange = Int(arc4random_uniform(UInt32(players.count)))
-            arr[0] = arr[exchange]
+        for x in 0..<players.count {
+            let temp = arr[x]
+            let exchange = Int(arc4random_uniform(UInt32(players.count - x))) + x
+            arr[x] = arr[exchange]
             arr[exchange] = temp
         }
         randSequ = arr;

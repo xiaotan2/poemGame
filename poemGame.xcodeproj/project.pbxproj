@@ -15,6 +15,7 @@
 		577CC9121C7090E000386DB9 /* poemtwo in Resources */ = {isa = PBXBuildFile; fileRef = 577CC9111C7090E000386DB9 /* poemtwo */; };
 		577CC9161C70911C00386DB9 /* Playertwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC9151C70911C00386DB9 /* Playertwo.swift */; };
 		577CC91A1C70A75500386DB9 /* MakesModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC9191C70A75500386DB9 /* MakesModelViewController.swift */; };
+		57A6DF971C70C18800393EC7 /* RandomWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A6DF961C70C18800393EC7 /* RandomWord.swift */; };
 		886D11E11C70174100387699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D11E01C70174100387699 /* AppDelegate.swift */; };
 		886D11E31C70174100387699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D11E21C70174100387699 /* ViewController.swift */; };
 		886D11E61C70174100387699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886D11E41C70174100387699 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		577CC9111C7090E000386DB9 /* poemtwo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = poemtwo; sourceTree = "<group>"; };
 		577CC9151C70911C00386DB9 /* Playertwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playertwo.swift; sourceTree = "<group>"; };
 		577CC9191C70A75500386DB9 /* MakesModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakesModelViewController.swift; path = ../MakesModelViewController.swift; sourceTree = "<group>"; };
+		57A6DF961C70C18800393EC7 /* RandomWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWord.swift; sourceTree = "<group>"; };
 		886D11DD1C70174100387699 /* poemGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poemGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886D11E01C70174100387699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886D11E21C70174100387699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				577CC9191C70A75500386DB9 /* MakesModelViewController.swift */,
+				57A6DF961C70C18800393EC7 /* RandomWord.swift */,
 				577CC8FA1C70864900386DB9 /* Model.swift */,
 				577CC8FB1C70864900386DB9 /* Player.swift */,
 				577CC9151C70911C00386DB9 /* Playertwo.swift */,
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577CC9101C70909B00386DB9 /* Modeltwo.swift in Sources */,
+				57A6DF971C70C18800393EC7 /* RandomWord.swift in Sources */,
 				886D11E31C70174100387699 /* ViewController.swift in Sources */,
 				577CC91A1C70A75500386DB9 /* MakesModelViewController.swift in Sources */,
 				577CC9061C70864900386DB9 /* Model.swift in Sources */,

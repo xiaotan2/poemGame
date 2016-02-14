@@ -19,7 +19,8 @@ class UserText: MakesModelViewController {
         
         // initialize the sentence label
         let sentence = UILabel(frame: CGRect(x:50, y:90, width: 240, height: 80))
-        let sentenceText = "This is the sentence"
+        let sentenceText = m.getCurrLine()
+        m.next()
         sentence.text = sentenceText + " ______"
         let senSize = sentence.text!.characters.count
         // set up the number of lines
