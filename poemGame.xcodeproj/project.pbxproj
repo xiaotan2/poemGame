@@ -11,6 +11,9 @@
 		577CC9071C70864900386DB9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC8FB1C70864900386DB9 /* Player.swift */; };
 		577CC9081C70864900386DB9 /* poems in Resources */ = {isa = PBXBuildFile; fileRef = 577CC8FC1C70864900386DB9 /* poems */; };
 		577CC90E1C708DE500386DB9 /* blanks in Resources */ = {isa = PBXBuildFile; fileRef = 577CC90D1C708DE500386DB9 /* blanks */; };
+		577CC9101C70909B00386DB9 /* Modeltwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC90F1C70909B00386DB9 /* Modeltwo.swift */; };
+		577CC9121C7090E000386DB9 /* poemtwo in Resources */ = {isa = PBXBuildFile; fileRef = 577CC9111C7090E000386DB9 /* poemtwo */; };
+		577CC9161C70911C00386DB9 /* Playertwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC9151C70911C00386DB9 /* Playertwo.swift */; };
 		886D11E11C70174100387699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D11E01C70174100387699 /* AppDelegate.swift */; };
 		886D11E31C70174100387699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D11E21C70174100387699 /* ViewController.swift */; };
 		886D11E61C70174100387699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886D11E41C70174100387699 /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		577CC8FB1C70864900386DB9 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../../../Documents/Model/Model/Player.swift; sourceTree = "<group>"; };
 		577CC8FC1C70864900386DB9 /* poems */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = poems; path = ../../../Documents/Model/Model/poems; sourceTree = "<group>"; };
 		577CC90D1C708DE500386DB9 /* blanks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blanks; sourceTree = "<group>"; };
+		577CC90F1C70909B00386DB9 /* Modeltwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modeltwo.swift; sourceTree = "<group>"; };
+		577CC9111C7090E000386DB9 /* poemtwo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = poemtwo; sourceTree = "<group>"; };
+		577CC9151C70911C00386DB9 /* Playertwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playertwo.swift; sourceTree = "<group>"; };
 		886D11DD1C70174100387699 /* poemGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poemGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886D11E01C70174100387699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886D11E21C70174100387699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +115,11 @@
 			children = (
 				577CC8FA1C70864900386DB9 /* Model.swift */,
 				577CC8FB1C70864900386DB9 /* Player.swift */,
+				577CC9151C70911C00386DB9 /* Playertwo.swift */,
 				577CC8FC1C70864900386DB9 /* poems */,
+				577CC9111C7090E000386DB9 /* poemtwo */,
 				577CC90D1C708DE500386DB9 /* blanks */,
+				577CC90F1C70909B00386DB9 /* Modeltwo.swift */,
 				886D11E01C70174100387699 /* AppDelegate.swift */,
 				886D11E21C70174100387699 /* ViewController.swift */,
 				886D11E41C70174100387699 /* Main.storyboard */,
@@ -244,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577CC9121C7090E000386DB9 /* poemtwo in Resources */,
 				577CC90E1C708DE500386DB9 /* blanks in Resources */,
 				886D11EB1C70174100387699 /* LaunchScreen.storyboard in Resources */,
 				577CC9081C70864900386DB9 /* poems in Resources */,
@@ -273,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577CC9101C70909B00386DB9 /* Modeltwo.swift in Sources */,
 				886D11E31C70174100387699 /* ViewController.swift in Sources */,
 				577CC9061C70864900386DB9 /* Model.swift in Sources */,
 				577CC9071C70864900386DB9 /* Player.swift in Sources */,
+				577CC9161C70911C00386DB9 /* Playertwo.swift in Sources */,
 				886D11E11C70174100387699 /* AppDelegate.swift in Sources */,
 				886D120F1C701A3200387699 /* UserText.swift in Sources */,
 			);
