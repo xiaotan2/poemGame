@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577CC9061C70864900386DB9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC8FA1C70864900386DB9 /* Model.swift */; };
+		577CC9071C70864900386DB9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC8FB1C70864900386DB9 /* Player.swift */; };
+		577CC9081C70864900386DB9 /* Untitled in Resources */ = {isa = PBXBuildFile; fileRef = 577CC8FC1C70864900386DB9 /* Untitled */; };
 		886D11E11C70174100387699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D11E01C70174100387699 /* AppDelegate.swift */; };
 		886D11E31C70174100387699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D11E21C70174100387699 /* ViewController.swift */; };
 		886D11E61C70174100387699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886D11E41C70174100387699 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577CC8FA1C70864900386DB9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../Documents/Model/Model/Model.swift; sourceTree = "<group>"; };
+		577CC8FB1C70864900386DB9 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../../../Documents/Model/Model/Player.swift; sourceTree = "<group>"; };
+		577CC8FC1C70864900386DB9 /* Untitled */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Untitled; path = ../../../Documents/Model/Model/Untitled; sourceTree = "<group>"; };
 		886D11DD1C70174100387699 /* poemGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poemGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886D11E01C70174100387699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886D11E21C70174100387699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 		886D11DF1C70174100387699 /* poemGame */ = {
 			isa = PBXGroup;
 			children = (
+				577CC8FA1C70864900386DB9 /* Model.swift */,
+				577CC8FB1C70864900386DB9 /* Player.swift */,
+				577CC8FC1C70864900386DB9 /* Untitled */,
 				886D11E01C70174100387699 /* AppDelegate.swift */,
 				886D11E21C70174100387699 /* ViewController.swift */,
 				886D11E41C70174100387699 /* Main.storyboard */,
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				886D11EB1C70174100387699 /* LaunchScreen.storyboard in Resources */,
+				577CC9081C70864900386DB9 /* Untitled in Resources */,
 				886D11E81C70174100387699 /* Assets.xcassets in Resources */,
 				886D11E61C70174100387699 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				886D11E31C70174100387699 /* ViewController.swift in Sources */,
+				577CC9061C70864900386DB9 /* Model.swift in Sources */,
+				577CC9071C70864900386DB9 /* Player.swift in Sources */,
 				886D11E11C70174100387699 /* AppDelegate.swift in Sources */,
 				886D120F1C701A3200387699 /* UserText.swift in Sources */,
 			);
@@ -488,6 +500,7 @@
 				886D12071C70174100387699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		886D12081C70174100387699 /* Build configuration list for PBXNativeTarget "poemGameTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				886D120A1C70174100387699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		886D120B1C70174100387699 /* Build configuration list for PBXNativeTarget "poemGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				886D120D1C70174100387699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
