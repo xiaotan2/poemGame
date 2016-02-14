@@ -11,7 +11,7 @@ import Foundation
 class Modeltwo {
     var fileString: [String]!
     var fillwords: [String]!
-    var players: [Player]!
+    var players: [Playertwo]!
     var pointer: Int //Points to the judge in the list
     var currPlayer: Int //Points to the current player in the list
     var poem: String
@@ -92,17 +92,17 @@ class Modeltwo {
     
     
     
-    func makePlayers(names: [String]) -> [Player] {
-        var plys =  [Player]()
+    func makePlayers(names: [String]) -> [Playertwo] {
+        var plys =  [Playertwo]()
         for nm in names {
-            plys.append(Player(name: nm))
+            plys.append(Playertwo(name: nm))
         }
         return plys
     }
     
     
     func getPoemArray() -> [String]? {
-        if let path = NSBundle.mainBundle().pathForResource("poems", ofType: nil){
+        if let path = NSBundle.mainBundle().pathForResource("poemtwo", ofType: nil){
             let fm = NSFileManager()
             let exists = fm.fileExistsAtPath(path)
             if(exists){
