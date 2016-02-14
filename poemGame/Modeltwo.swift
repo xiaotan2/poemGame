@@ -99,12 +99,12 @@ class Modeltwo {
     
     
     
-    func makePlayers(names: [String]) -> [Playertwo] {
+    func makePlayers(names: [String]){
         var plys =  [Playertwo]()
         for nm in names {
             plys.append(Playertwo(name: nm))
         }
-        return plys
+        players = plys
     }
     
     
