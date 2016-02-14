@@ -9,7 +9,7 @@
 import UIKit
 
 class MakesModelViewController: UIViewController {
-    var m = Modeltwo(names: [""])
+    var m: Modeltwo!
 
     override func viewDidLoad() {
         super.viewDidLoad()

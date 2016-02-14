@@ -10,7 +10,7 @@ import UIKit
 
 class UserText: MakesModelViewController {
 
-    var counter = 2
+    var counter = 10
     var timer = NSTimer()
     var timerText = UILabel()
     // MARK: Initialization
@@ -19,8 +19,11 @@ class UserText: MakesModelViewController {
         
         // initialize the sentence label
         let sentence = UILabel(frame: CGRect(x:50, y:90, width: 240, height: 80))
-        let sentenceText = m.getCurrLine()
         m.next()
+            
+        
+        let sentenceText = m.getCurrLine()
+       
         sentence.text = sentenceText + " ______"
         let senSize = sentence.text!.characters.count
         // set up the number of lines
@@ -32,7 +35,8 @@ class UserText: MakesModelViewController {
         
         // initialize the user input textfield
         let userInput = UITextField(frame: CGRect(x:150, y:(180), width:50, height:40))
-        userInput.text = "User"
+        userInput.text = "_____"
+       
         
         
         // initialize timer
@@ -57,5 +61,11 @@ class UserText: MakesModelViewController {
             let vc: UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TimeUp") as UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let svc = segue.destinationViewController as! MakesModelViewController
+        svc.m = m
+        
     }
 }

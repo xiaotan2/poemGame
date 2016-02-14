@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var promptWords = [String]()
-    var poems = [[String]]()
+    //var promptWords = [String]()
+    //var poems = [[String]]()
     var playerSubmissions = [String]()
     var m = Modeltwo(names: ["hello"])
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             let svc = segue.destinationViewController as! MakesModelViewController
             svc.m = m
 

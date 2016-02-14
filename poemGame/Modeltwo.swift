@@ -15,13 +15,14 @@ class Modeltwo {
     //var pointer: Int //Points to the judge in the list
     var currPlayer: Int //Points to the current player in the list
     var poem: String
+    var poemSplit: [String]
     var randSequ: [Int]!
     
     
     init(names: [String]) {
-        //pointer = 0
         currPlayer = 0
         poem = ""
+        poemSplit = [poem]
         fileString = getPoemArray()
         fillwords = getFillWords()
         makePlayers(names)
@@ -41,25 +42,24 @@ class Modeltwo {
 //        }
         updatePoem()
         lineSequence()
+        poemSplit = poem.componentsSeparatedByString("\n")
 //        return players[pointer].name
     }
     
     //The current player is the next one in the rotation
-    func next()-> Bool {
-        if currPlayer + 1 == players.count {
-            currPlayer == 0
-        }
-        else {
-            currPlayer += 1
-        }
-        return currPlayer != pointer
+    func next()/*-> Bool*/ {
+        currPlayer = currPlayer+1
+        //return currPlayer < players.count
     }
     
     func getCurrLine() -> String{
 //        for x in randSequ {
 //            print(randSequ[x])
 //        }
-        return poem.componentsSeparatedByString("\n")[randSequ[currPlayer]]
+        print("called")
+        print(String(currPlayer))
+        print(poemSplit[currPlayer])
+        return poemSplit[currPlayer]
     }
     
 //    func getCurrPlayerName() -> String {
@@ -122,7 +122,9 @@ class Modeltwo {
                 return str.componentsSeparatedByString("\n\n")
             }
         }
-        return nil
+        //return nil
+        let stringa: [String] = ["\n"]
+        return stringa
     }
     
     func getFillWords() -> [String]? {
@@ -136,7 +138,10 @@ class Modeltwo {
                 return str.componentsSeparatedByString("\n")
             }
         }
-        return nil
+       // return nil
+        let stringb: [String] = ["\n"]
+        return stringb
+
     }
     
     func getRandBlank()->String {
