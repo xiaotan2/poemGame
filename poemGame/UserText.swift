@@ -14,8 +14,8 @@ class UserText: UIViewController {
     var timer = NSTimer()
     var timerText = UILabel()
     // MARK: Initialization
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         // initialize the sentence label
         let sentence = UILabel(frame: CGRect(x:50, y:90, width: 240, height: 80))
@@ -42,8 +42,8 @@ class UserText: UIViewController {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("timerAction"), userInfo: nil, repeats: true)
 
         self.view.addSubview(sentence)
-        //view.addSubview(userInput)
-        //view.addSubview(timerText)
+        self.view.addSubview(userInput)
+        self.view.addSubview(timerText)
     }
     func timerAction() {
         if counter > 0 {
@@ -51,6 +51,7 @@ class UserText: UIViewController {
             timerText.text = "\(counter)"
         }
         else {
+            
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let vc: UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TimeUp") as UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
