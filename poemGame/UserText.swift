@@ -56,16 +56,18 @@ class UserText: MakesModelViewController {
             timerText.text = "\(counter)"
         }
         else {
+            performSegueWithIdentifier("last", sender: self)
             
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc: UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TimeUp") as UIViewController
-            self.presentViewController(vc, animated: true, completion: nil)
+//            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc: UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TimeUp") as UIViewController
+//            self.presentViewController(vc, animated: true, completion: nil)
+            
         }
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        let svc = segue.destinationViewController as! MakesModelViewController
-        svc.m = m
-        
-    }
+//    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        let svc = segue.destinationViewController as! MakesModelViewController
+//        svc.m = m
+//        
+//    }
 }
